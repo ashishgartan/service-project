@@ -1,0 +1,21 @@
+<div class="container py-4">
+    <h4 class="text-center text-secondary">Services we provide</h4>
+    <div class="row">
+        {{!-- service 1 --}}
+        {{#each data}}
+        <div class="col-md-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="container py-3 text-center">
+                        <i class="{{this.icon}} text-secondary service-icon"></i>
+                    </div>
+                    <h3 class="card-title">{{this.title}}</h3>
+                    <p>{{this.description}}</p>
+                    <a href="{{this.linkText}}">{{this.link}}</a>
+                    <a href="#" class="ms-3">Support</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
